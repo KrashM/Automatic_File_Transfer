@@ -40,7 +40,7 @@ class MyHandler(FileSystemEventHandler):
             new_destination = folder_destination + "/" + new_name
             shutil.move(src, new_destination)
 
-folder_to_track = "C:/Users/User/Downloads"
+folder_to_track = "C:/Users/Krash/Downloads"
 destinations = ( "/Texts", "/Images", "/Videos", "/Zips", "/Executables", "/Torrents", "/Files" )
 texts = (".txt", ".docx", ".pdf", ".doc" )
 executables = ( ".exe", ".bat", ".apk" )
