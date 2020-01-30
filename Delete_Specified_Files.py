@@ -1,14 +1,15 @@
 import os
 import shutil
 
-files_to_seek = input()
+file_extention = input()
 while True:
     files = os.listdir()
     for file in files:
-        if files_to_seek in file:
+        if file_extention in file:
             os.unlink(os.path.join(os.getcwd(), file))
     print("Do you want to delete anything else?(y:n)")
     yes_no = input()
     if yes_no == 'n':
         break
-    files_to_seek = input()
+    file_extention = input()
+os.unlink(os.path.join(os.getcwd(), "Delete_Specified_Files.py"))
